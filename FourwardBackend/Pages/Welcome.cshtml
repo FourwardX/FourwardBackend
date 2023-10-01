@@ -1,0 +1,19 @@
+﻿@page "{Name}/{Bye?}"
+@model WelcomeModel
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+</head>
+<body>
+    <h1>@Model.Message</h1>
+    @if (Model.IsPresent)
+    {
+        <p>You are present!</p>
+    }
+    else
+    {
+        <p>You are not present!</p>
+    }
+</body>
+</html>
